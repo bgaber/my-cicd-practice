@@ -1,0 +1,13 @@
+[all]
+SPLAWSSREMGT01      ansible_host=10.251.3.205    ansible_user=ec2-user
+SPLAWSSREDKR01      ansible_host=10.251.2.55    ansible_user=ec2-user
+SPLAWSSREAWX01      ansible_host=10.251.2.59    ansible_user=ec2-user
+
+[sre-mgt]
+SPLAWSSREMGT01      ansible_host=10.251.3.205    ansible_user=ec2-user
+
+[sre-docker]
+SPLAWSSREDKR01      ansible_host=10.251.2.55    ansible_user=ec2-user
+
+[sre-awx]
+SPLAWSSREAWX01      ansible_host=10.251.2.59    ansible_user=ec2-user

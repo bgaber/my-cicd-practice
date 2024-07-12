@@ -1,0 +1,24 @@
+---
+- name: Replace text.txt
+  hosts: sre-mgt
+  gather_facts: true
+  become: true
+  tasks:
+  # - name: Value of inventory_hostname
+  #   debug: var={{ inventory_hostname }}
+
+  # - name: Value of ansible_hostname
+  #   debug: var={{ ansible_hostname }}
+
+  # - name: Value of ansible_user
+  #   debug: var={{ ansible_user }}
+
+  - name: Copy File
+    copy:
+      src: files/text.txt
+      dest: /tmp/text.txt
+      remote_src: no
+      owner: root
+      group: root
+      mode: 0644
+      backup: yes
